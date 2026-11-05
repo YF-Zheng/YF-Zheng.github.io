@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Yanfeng Zheng 的个人作品集。在北京大学 Pillar Lab 从事 AI/ML 研究，分享开源项目、工具与代码实验。">
+  <meta name="theme-color" content="#f3f1e9">
+  <meta property="og:title" content="Yanfeng Zheng — 想法落地，代码成形。">
+  <meta property="og:description" content="AI / ML · Peking University · 开源项目与代码实验">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yf-zheng.github.io/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <title>Yanfeng Zheng — Personal Portfolio</title>
+</head>
+<body>
+  <a class="skip" href="#main">跳到内容</a>
+  <header class="header wrap">
+    <a class="logo" href="#top" aria-label="Yanfeng Zheng 首页">yz<span class="logo-dot">.</span></a>
+    <nav aria-label="主导航"><a href="#work">作品</a><a href="#about">关于</a><a href="#contact">联系 <span aria-hidden="true">↗</span></a></nav>
+    <a class="github-top" href="https://github.com/YF-Zheng">GitHub <span aria-hidden="true">↗</span></a>
+  </header>
+  <main id="main">
+    <section class="hero wrap" id="top" aria-labelledby="hero-title">
+      <div class="hero-kicker"><span class="dot"></span> AI / ML RESEARCH & CODE <span class="hero-location">BEIJING, CHINA</span></div>
+      <div class="hero-grid">
+        <div class="hero-copy"><p class="eyebrow">你好，我是</p><h1 id="hero-title">Yanfeng<br><span>Zheng</span><span class="name-dot">.</span></h1><p class="hero-statement">想法落地，<br>代码成形。</p></div>
+        <div class="hero-right">
+          <div class="artifact" aria-hidden="true">
+            <div class="artifact-top"><span>FIELD NOTES / 001</span><span>YZ</span></div>
+            <svg class="orbital" viewBox="0 0 360 300" fill="none"><ellipse cx="180" cy="150" rx="135" ry="60" transform="rotate(-35 180 150)"/><ellipse cx="180" cy="150" rx="135" ry="60" transform="rotate(35 180 150)"/><ellipse cx="180" cy="150" rx="60" ry="135"/><path d="M30 150H330M180 10V290" stroke-dasharray="3 6" class="axis"/><circle cx="180" cy="150" r="35" class="orb-core"/><circle cx="180" cy="150" r="7" class="orb-dot"/><circle cx="293" cy="80" r="8" class="satellite"/><circle cx="67" cy="220" r="5" class="satellite secondary"/></svg>
+            <div class="artifact-bottom"><span>IDEA → BUILD → SHARE</span><span>+ EXPLORE</span></div>
+          </div>
+          <p class="intro">在北京大学 <strong>Pillar Lab</strong> 从事 AI/ML 研究。<br>这里是我的一小块互联网，收录项目、工具与代码实验。</p>
+          <a class="button" href="#work">探索我的作品 <span aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+      <div class="hero-footer"><span>RESEARCHER. BUILDER. EXPLORER.</span><span>向下探索 <span aria-hidden="true">↘</span></span></div>
+    </section>
+    <section class="work wrap" id="work" aria-labelledby="work-title">
+      <div class="section-heading"><div><p class="eyebrow">01 / SELECTED WORK</p><h2 id="work-title">写下想法，<span>做成作品。</span></h2></div><a class="text-link" href="https://github.com/YF-Zheng?tab=repositories">全部仓库 <span aria-hidden="true">↗</span></a></div>
+      <article class="featured">
+        <div class="featured-copy"><div class="project-index">01 <span>FEATURED PROJECT</span></div><div><div class="tags"><span>PYTHON</span><span>OPEN SOURCE</span><span>LINUX / NVIDIA</span></div><h3>GPU Tetris<span>↗</span></h3><p>让 GPU 的空闲时间，<br>拼成下一段计算。</p><p class="project-description">独立的单机 GPU 任务队列与终端监控工具。根据利用率、显存和观察窗口安排任务，支持多卡分配与可回收的 Keeper 负载。</p><div class="project-links"><a class="light-button" href="https://yf-zheng.github.io/GPU-tetris/">交互指南 <span aria-hidden="true">↗</span></a><a href="https://github.com/YF-Zheng/GPU-tetris">查看源码 <span aria-hidden="true">↗</span></a></div></div><span class="featured-foot">GPU TASK QUEUE / v0.3.0 ALPHA</span></div>
+        <div class="project-visual" aria-label="GPU Tetris 终端界面示意，并非实时 GPU 数据"><div class="visual-label"><span>TERMINAL STUDY</span><span>界面示意 / 非实时数据</span></div><div class="terminal"><div class="terminal-bar"><div class="window-dots"><i></i><i></i><i></i></div><span>tetris-smi</span><span>⌘</span></div><div class="terminal-body"><p><span class="terminal-green">❯</span> tetris-smi --watch 2</p><div class="term-title">GPU TETRIS <span>LOCAL POOL</span></div><div class="gpu-row"><span>GPU 0</span><div class="blocks"><i></i><i></i><i></i><i></i><i class="empty"></i><i class="empty"></i></div><span class="terminal-green">RUNNING</span></div><div class="gpu-row"><span>GPU 1</span><div class="blocks"><i class="orange"></i><i class="orange"></i><i class="empty"></i><i class="empty"></i><i class="empty"></i><i class="empty"></i></div><span class="terminal-orange">OBSERVE</span></div><div class="gpu-row"><span>GPU 2</span><div class="blocks"><i></i><i></i><i></i><i class="empty"></i><i class="empty"></i><i class="empty"></i></div><span class="terminal-green">RUNNING</span></div><div class="term-rule"></div><p class="terminal-muted">OWNERSHIP single_user<br>QUEUE fifo · PLACEMENT balanced</p><p><span class="terminal-green">❯</span> <span class="cursor">_</span></p></div></div><div class="visual-caption"><span>LESS WAITING.</span><span>MORE COMPUTING.</span></div></div>
+      </article>
+      <div class="small-projects"><article class="small-project"><span class="project-number">02 / CODE EXPERIMENT</span><a href="https://github.com/YF-Zheng/pmw-engine-v2"><h3>pmw-engine-v2 <span aria-hidden="true">↗</span></h3></a><div class="small-project-foot"><span><i class="language python"></i> Python</span><span>公开代码仓库</span></div></article><article class="small-project"><span class="project-number">03 / CODE EXPERIMENT</span><a href="https://github.com/YF-Zheng/demo44"><h3>demo44 <span aria-hidden="true">↗</span></h3></a><div class="small-project-foot"><span><i class="language java"></i> Java</span><span>公开代码仓库</span></div></article></div>
+    </section>
+    <section class="about wrap" id="about" aria-labelledby="about-title"><div class="about-left"><p class="eyebrow">02 / A LITTLE ABOUT ME</p><h2 id="about-title">保持好奇，<br><span>继续构建。</span></h2><div class="about-mark" aria-hidden="true">✳</div></div><div class="about-right"><p class="about-lead">我是 Yanfeng Zheng，<br>在北京大学 Pillar Lab 从事<br><em>人工智能与机器学习研究。</em></p><p class="about-text">研究中的想法，也可以成为可运行的代码。这个主页记录我在研究之外构建的工具与开源项目，你可以在 GitHub 找到源码，或从项目指南了解它们如何使用。</p><dl class="profile-details"><div><dt>BASED IN</dt><dd>Beijing, China</dd></div><div><dt>AFFILIATION</dt><dd>Peking University · Pillar Lab</dd></div><div><dt>FIND ME</dt><dd><a href="https://github.com/YF-Zheng">@YF-Zheng <span aria-hidden="true">↗</span></a></dd></div></dl></div></section>
+    <section class="contact" id="contact" aria-labelledby="contact-title"><div class="wrap"><div class="contact-top"><p class="eyebrow">03 / GET IN TOUCH</p><span>有想法，来聊聊。</span></div><a class="contact-title" href="mailto:yanfengzheng25@stu.pku.edu.cn"><h2 id="contact-title">Say hello<span>.</span></h2><span aria-hidden="true">↗</span></a><div class="contact-bottom"><a href="mailto:yanfengzheng25@stu.pku.edu.cn">yanfengzheng25@stu.pku.edu.cn</a><button id="copy-email" type="button">复制邮箱 <span aria-hidden="true">↗</span></button><span id="copy-status" role="status" aria-live="polite"></span></div></div></section>
+  </main>
+  <footer class="footer wrap"><span>© <span id="year">2026</span> Yanfeng Zheng</span><span>BUILT WITH CURIOSITY.</span><a href="#top">回到顶部 ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
